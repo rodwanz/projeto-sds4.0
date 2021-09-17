@@ -19,7 +19,7 @@ type ChartData = {
 
 const BarChart = () => {
 
-  const [charData, setChartData] = useState<ChartData>({
+  const [chartData, setChartData] = useState<ChartData>({
     labels: {
       categories: []
     },
@@ -71,6 +71,7 @@ const BarChart = () => {
       }
     ]
   };
+
   return (
     <Chart
       options={{ ...options, xaxis: mocktData.labels }}
